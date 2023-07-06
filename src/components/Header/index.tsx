@@ -16,8 +16,8 @@ export function Header() {
                     </ul>
 
                     <div>
-                        <LoginButton>Login</LoginButton>
-                        <SignUpButton>Sign Up</SignUpButton>
+                        <LoginButton type="button">Login</LoginButton>
+                        <SignUpButton type="button">Sign Up</SignUpButton>
                     </div>    
 
                 </NavContent>

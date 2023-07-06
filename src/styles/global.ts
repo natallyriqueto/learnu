@@ -12,9 +12,13 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: ${props => props.theme.background["paper"]};
         color: ${props => props.theme.text["primary"]};
         -webkit-font-smoothing: antialiased;
     }
 
+    @media (max-width: 768px) {
+        html {
+            font-size: 87%;
+        }
+    }
 `;
