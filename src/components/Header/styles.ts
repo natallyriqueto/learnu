@@ -2,14 +2,16 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.section`
     background: ${props => props.theme.background["default"]};
-    width: 100%;
     height: 4.75rem;
 `;
 
 export const Nav = styled.nav`
     height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
     line-height: 1.375rem;
-    padding: 0 9rem;
+    padding: 0 5rem;
 
     display: flex;
     align-items: center;
@@ -61,7 +63,6 @@ export const SignUpButton = styled.button`
 export const Toggle = styled.div`
     display: none;
 
-    
     @media (max-width: 1000px) {
         display: block;
     }
