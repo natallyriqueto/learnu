@@ -7,6 +7,8 @@ Learn U is landing page that refers to a study platform.
 
 ## Getting Started
 1. Clone the repository
+   ```bash
+   git clone https://github.com/natallyriqueto/learnu.git  
 2. Install dependencies:
    ```bash
    npm install
