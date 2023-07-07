@@ -29,15 +29,6 @@ export const QuestionsContainer = styled.div`
             display: none;
         }
     }
-
-    /* @media (max-width: 768px) {
-        img { 
-            width: 80%;
-        }
-    } */
-`;
-
-export const QuestionsContent = styled.div`
 `;
 
 export const Questions = styled.div`

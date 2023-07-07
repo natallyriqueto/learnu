@@ -3,7 +3,6 @@ import {
   QuestionsContainer, 
   Questions, 
   Title, 
-  QuestionsContent, 
   Divider
 } from './styles';
 import askedImg from '../../assets/askedImg.png';
@@ -16,7 +15,7 @@ export function FrequentlyAsked() {
       
       <QuestionsContainer>
 
-        <QuestionsContent>
+        <div>
           <Questions>
             <Divider />
             <Title>How do I enroll in a course?</Title>
@@ -41,7 +40,7 @@ export function FrequentlyAsked() {
             <p>We want you to be fully satisfied with your learning experience. If, within the first 7 days of enrollment, you find that the course does not meet your expectations, you can request a refund.</p>
             <Divider />
           </Questions>
-        </QuestionsContent>
+        </div>
 
         <img src={askedImg} alt="woman with a blue question mark" />
       </QuestionsContainer>
