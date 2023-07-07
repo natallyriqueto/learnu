@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -12,13 +12,26 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        color: ${props => props.theme.text["primary"]};
+        color: ${props => props.theme.text['primary']};
         -webkit-font-smoothing: antialiased;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+    
+    p {
+        color: ${props => props.theme.text['secondary']};
+        line-height: 1.5;
     }
 
     @media (max-width: 768px) {
         html {
             font-size: 87%;
+        }
+
+        h1 {
+            font-size: 3rem;
         }
     }
 `;

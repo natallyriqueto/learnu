@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const HeaderContainer = styled.section`
-    background: ${props => props.theme.background["default"]};
+    background: ${props => props.theme.background['default']};
     height: 4.75rem;
 `;
 
@@ -47,7 +47,7 @@ export const NavContent = styled.div`
 export const LoginButton = styled.button`
     background: transparent;
     border-radius: 6px;
-    border: 1px solid ${props => props.theme["gray-300"]};
+    border: 1px solid ${props => props.theme['gray-300']};
     height: 2.25rem;
     width: 3.8rem;
 `;
@@ -55,9 +55,9 @@ export const LoginButton = styled.button`
 export const SignUpButton = styled.button`
     height: 2.25rem;
     width: 4.8rem;
-    background: ${props => props.theme["gray-800"]};
+    background: ${props => props.theme['gray-800']};
     border-radius: 6px;
-    color: ${props => props.theme.text["tertiary"]};
+    color: ${props => props.theme.text['tertiary']};
 `;
 
 export const Toggle = styled.div`

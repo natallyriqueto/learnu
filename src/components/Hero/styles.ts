@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import heroBg from "../../assets/heroBackground.png";
+import styled from 'styled-components';
+import heroBg from '../../assets/heroBackground.png';
 
 export const HeroContainer = styled.section`
     background-image: url(${heroBg});
@@ -9,7 +9,7 @@ export const HeroContainer = styled.section`
 
 export const HeroContent = styled.div`
     max-width: 1440px;
-    height: 50rem;
+    min-height: 50rem;
 
     margin: 0 auto;
     padding: 0 5rem;
@@ -24,12 +24,11 @@ export const HeroContent = styled.div`
     }
   
     @media (max-width: 1200px) {
-        height: 70rem;
-
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 5rem;
+        padding-top: 5rem;
 
         img { 
             width: 60%;
@@ -69,20 +68,12 @@ export const TextContent = styled.div`
         font-weight: bold;
         padding: 0.5rem 0.6875rem;
         border-radius: 6px;
-        background: ${props => props.theme["gray-800"]};
-        color: ${props => props.theme.text["tertiary"]};
-    }
-
-    h1 {
-        font-size: 4rem;
-    }
-    
-    p {
-        color: ${props => props.theme.text["secondary"]};
-        line-height: 1.5;
+        background: ${props => props.theme['gray-800']};
+        color: ${props => props.theme.text['tertiary']};
     }
 
     p:first-child {
+        text-transform: uppercase;
         font-weight: 700;
     }
 `;
