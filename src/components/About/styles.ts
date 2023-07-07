@@ -54,9 +54,7 @@ export const GridContainer = styled.div`
 `;
 
 export const GridItem = styled.div`
-    strong {
-        color: ${props => props.theme.text['secondary']};
-    }
+   
 `;
 
 export const Number = styled.div`

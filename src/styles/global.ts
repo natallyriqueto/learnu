@@ -25,6 +25,11 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 1.5;
     }
 
+    strong {
+        color: ${props => props.theme.text['secondary']};
+        text-transform: uppercase;
+    }
+
     @media (max-width: 768px) {
         html {
             font-size: 87%;

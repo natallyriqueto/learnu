@@ -23,7 +23,7 @@ export function About() {
     <AboutContainer>
             
       <VideoContent>
-        <YouTube videoId={videoId} opts={opts} />
+        {/* <YouTube videoId={videoId} opts={opts} /> */}
       </VideoContent>
 
       <AboutContent>
