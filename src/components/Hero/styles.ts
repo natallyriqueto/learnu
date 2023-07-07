@@ -64,6 +64,10 @@ export const TextContent = styled.div`
         gap: 1rem;
     }
 
+    h1 {
+        font-size: 4rem;
+    }
+
     button {
         font-weight: bold;
         padding: 0.5rem 0.6875rem;

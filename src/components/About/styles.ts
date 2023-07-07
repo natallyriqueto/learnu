@@ -47,7 +47,7 @@ export const AboutIntroduction = styled.div`
 `;
 
 export const GridContainer = styled.div`
-    flex: 0 1 36.25rem; 
+    flex: 0 1 30rem; 
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 1rem;

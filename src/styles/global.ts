@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     
     p {
@@ -30,13 +30,20 @@ export const GlobalStyle = createGlobalStyle`
         text-transform: uppercase;
     }
 
+    button {
+        border-radius: 8px;
+        height: 3.5rem;
+        width: 10rem;
+        font-weight: 700;
+    }
+
     @media (max-width: 768px) {
         html {
             font-size: 87%;
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 2rem;
         }
     }
 `;
