@@ -14,6 +14,7 @@ export const TeamContent = styled.div`
     button {
         background: transparent;
         border: none;
+        cursor: pointer;
     }
 `;
 

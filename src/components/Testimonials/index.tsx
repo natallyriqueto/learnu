@@ -88,7 +88,7 @@ export function Testimonials() {
             </button>
 
             <div>
-              <SlideImage src={slides[currentSlide].imgName} alt="picture of a team member" />
+              <SlideImage src={slides[currentSlide].imgName} alt="picture of a person that wrote the testimonial" />
               <div>
                 <TestimonialName>{slides[currentSlide].name}</TestimonialName>
                 <p>{slides[currentSlide].profession}</p>
