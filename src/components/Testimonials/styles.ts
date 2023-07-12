@@ -1,9 +1,6 @@
 import { styled } from 'styled-components';
 
-export const TeamContainer = styled.section`
-`;
-
-export const TeamContent = styled.section`
+export const TeamContent = styled.div`
     max-width: 1140px;
     margin: 0 auto;
     padding: 5rem;

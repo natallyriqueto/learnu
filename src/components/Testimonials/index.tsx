@@ -3,7 +3,13 @@ import testimonials1 from '../../assets/testimonials1.png';
 import testimonials2 from '../../assets/testimonials2.png';
 import testimonials3 from '../../assets/testimonials3.png';
 import { CaretLeft, CaretRight, Star } from 'phosphor-react';
-import { SliderContent, SlideImage, TeamContainer, TeamContent, TestimonialContent, TestimonialName } from './styles';
+import { 
+  SliderContent, 
+  SlideImage, 
+  TeamContent, 
+  TestimonialContent, 
+  TestimonialName 
+} from './styles';
 
 interface slidesType {
     name: string;
@@ -46,11 +52,16 @@ export function Testimonials() {
   };
 
   const previousSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide - 1) % slides.length);
+    if (currentSlide != 0) {
+      setCurrentSlide((prevSlide) => (prevSlide - 1) % slides.length);
+    }
+    else {
+      setCurrentSlide(slides.length - 1);
+    }
   };
 
   return (
-    <TeamContainer>
+    <section>
       <TeamContent>
         <strong>Testimonials</strong>
         <h1>Who Love Our Work</h1>
@@ -64,7 +75,7 @@ export function Testimonials() {
                 const starColor =
                     starValue <= slides[currentSlide].rating ? '#FFAB00' : 'lightgray';
         
-                return  <Star size={32} weight="fill" color={starColor} />;
+                return  <Star key={index} size={32} weight="fill" color={starColor} />;
               })
             }
           </div>
@@ -92,6 +103,6 @@ export function Testimonials() {
         </TestimonialContent>
 
       </TeamContent>
-    </TeamContainer>
+    </section>
   );
 }
