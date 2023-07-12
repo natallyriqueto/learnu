@@ -5,6 +5,7 @@ import { Pricing } from '../../components/Pricing';
 import { Services } from '../../components/Services';
 import { SignUpNews } from '../../components/SignUpNews';
 import { SignUpTrialAccount } from '../../components/SignUpTrialAccount';
+import { Testimonials } from '../../components/Testimonials';
 import { HomeContainer } from './styles';
 
 export function Home() {
@@ -15,6 +16,7 @@ export function Home() {
       <About />
       <Services />
       <Pricing />
+      <Testimonials />
       <FrequentlyAsked />
       <SignUpTrialAccount />
       <SignUpNews />

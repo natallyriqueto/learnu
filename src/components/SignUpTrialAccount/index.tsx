@@ -1,4 +1,10 @@
-import { AccountButton, AccountForm, AccountInput, SignUpTrialContainer, SignUpTrialContent } from './styles';
+import { 
+  AccountButton, 
+  AccountForm, 
+  AccountInput, 
+  SignUpTrialContainer, 
+  SignUpTrialContent 
+} from './styles';
 
 export function SignUpTrialAccount() {
   return (

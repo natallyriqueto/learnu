@@ -30,5 +30,7 @@ export const defaultTheme = {
   'gray-800': '#212B36',
   'gray-900': '#161C24',
 
+  'yellow': '#FFAB00', 
+
   'divider': 'rgba(145, 158, 171, 0.20)'
 };
