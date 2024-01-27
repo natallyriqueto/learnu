@@ -1,8 +1,7 @@
 import { styled } from 'styled-components';
-import { SwiperSlide } from 'swiper/react';
 
-export const Slide = styled(SwiperSlide)`
-    display: flex;
+export const Slide = styled.div`
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;

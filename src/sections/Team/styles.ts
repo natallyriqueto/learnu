@@ -18,7 +18,7 @@ export const TeamContent = styled.div`
   @media(min-width: 960px) {
     padding: 7rem 1.5rem;
     flex-wrap: nowrap;
-  }
+  } 
 `;
 
 export const TeamDescription = styled.div`

@@ -1,14 +1,11 @@
 import { styled } from 'styled-components';
-import { SwiperSlide } from 'swiper/react';
 
-export const Slide = styled(SwiperSlide)`
-    display: flex;
+export const Slide = styled.div`
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    
-    width: 12.5rem !important;
 
     strong {
         font-size: 1rem;
@@ -21,4 +18,14 @@ export const Slide = styled(SwiperSlide)`
         font-weight: 500;
         color: ${props => props.theme['gray-500']};
     }
+`;
+
+export const CarouselContainer = styled.div`
+  max-width: 30rem;
+  padding: 2rem;
+  margin: 0 auto;
+
+  @media (max-width: 600px) {
+    max-width: 20rem;
+  }
 `;

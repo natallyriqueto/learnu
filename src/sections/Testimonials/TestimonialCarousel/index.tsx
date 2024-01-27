@@ -1,9 +1,4 @@
-import { Swiper } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper/modules';
-
-// import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import Slider from 'react-slick';
 
 import testimonials1 from '@/assets/testimonials1.png';
 import testimonials2 from '@/assets/testimonials2.png';
@@ -46,19 +41,16 @@ const slides: slidesType[] = [
 ];
 
 export const TestimonialCarousel = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+
   return (
-    <Swiper
-      slidesPerView={1}
-      navigation={true}
-      loop={true}
-      autoplay={{
-        delay: 4000,
-        disableOnInteraction: false,
-      }}
-      mousewheel={true}
-      modules={[Navigation, Autoplay]}
-      className="mySwiper"
-    >
+    <Slider {...settings}>
       {
         slides.map(slide => (
           <Slide key={slide.name}>
@@ -78,6 +70,6 @@ export const TestimonialCarousel = () => {
           </Slide>
         ))
       }
-    </Swiper>
+    </Slider>
   );
 };

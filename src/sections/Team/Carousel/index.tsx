@@ -1,31 +1,27 @@
-import { Swiper } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
-
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import Slider from 'react-slick';
+import { CarouselContainer, Slide } from './styles';
 
 import teamMember1 from '@/assets/teamMember1.png';
 import teamMember2 from '@/assets/teamMember2.png';
 import teamMember3 from '@/assets/teamMember3.png';
 import teamMember4 from '@/assets/teamMember4.png';
-import { Slide } from './styles';
 import { useMediaQuery } from 'react-responsive';
 
 export const Carousel = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 960px)' });
-  const slidesView = isMobile ? 1 : 3;
+  const slidesView = isMobile ? 1 : 2;
   
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: slidesView,
+    slidesToScroll: slidesView
+  };
+
   return (
-    <>
-      <Swiper
-        slidesPerView={slidesView}
-        spaceBetween={24}
-        navigation={true}
-        mousewheel={true}
-        modules={[Navigation]}
-        className="mySwiper"
-      >
+    <CarouselContainer>
+      <Slider {...settings}>
         <Slide key="teamMember1">
           <img src={teamMember1} />
           <strong>Eliza Mesta</strong>
@@ -46,7 +42,7 @@ export const Carousel = () => {
           <strong>John Lhuillier</strong>
           <span>Designer</span>
         </Slide>
-      </Swiper>
-    </>
+      </Slider>
+    </CarouselContainer>
   );
 };

@@ -42,7 +42,7 @@ export function Pricing() {
                 <h4>$29</h4><span>/mo</span>
               </div>
             </Price>
-            <PaperPlaneTilt size={60} color='gray'/>
+            <PaperPlaneTilt size={32} color='gray'/>
           </header>
           <p>Our Basic Plan is designed to provide an affordable entry point for learners of all backgrounds.</p>
           <BenefitsList>
@@ -72,7 +72,7 @@ export function Pricing() {
                 <h4>$59</h4><span>/mo</span>
               </div>
             </Price>
-            <AirplaneTakeoff size={60} color='gray' />
+            <AirplaneTakeoff size={32} color='gray' />
           </header>
           <p>Unlock a wider range of courses, giving you more opportunities to expand your learning horizons.</p>
           <BenefitsList>
@@ -102,7 +102,7 @@ export function Pricing() {
                 <h4>$99</h4><span>/mo</span>
               </div>
             </Price>
-            <RocketLaunch size={60} color='gray' />
+            <RocketLaunch size={32} color='gray' />
           </header>
           <p>Receive personalized mentorship from our experienced instructors and subject matter experts.</p>
           <BenefitsList>

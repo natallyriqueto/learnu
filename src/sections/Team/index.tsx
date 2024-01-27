@@ -12,7 +12,6 @@ export function Team() {
   return (
     <TeamContainer>
       <TeamContent>
-
         <TeamDescription>
           <Caption text="Team" />
           <Heading text="Meet Our Team" style={{color:'#3182CE'}} />
@@ -21,7 +20,6 @@ export function Team() {
             text="Our team is composed of educators, technologists and designers, who share a common commitment to delivering a remarkable learning experience." 
           />
         </TeamDescription>
-
         <Carousel />
       </TeamContent>
     </TeamContainer>

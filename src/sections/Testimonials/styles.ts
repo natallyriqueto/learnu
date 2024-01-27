@@ -25,9 +25,9 @@ export const TestimonialsDescription = styled.div`
 `;
 
 export const TestimonialsContent = styled.div`
-    max-width: 80vw;
-    width: 37.5rem;
-    height: 30rem;
+  max-width: 80vw;
+  width: 37.5rem;
+  height: 30rem;
 `;
 
 export const TestimonialContent = styled.div`
