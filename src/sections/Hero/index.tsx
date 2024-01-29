@@ -6,7 +6,6 @@ import {
   HeroContainer, 
   TextContent, 
   HeroContent, 
-  HeroFooter, 
   PlayContainer 
 } from './styles';
 
@@ -14,8 +13,6 @@ import { Button } from '@/components/Button/styles';
 import { Caption, Paragraph } from '@/components/Text';
 
 import videoImg from '@/assets/videoTutorial.png';
-import polygonLeft from '@/assets/polygonLeft.svg';
-import polygonRight from '@/assets/polygonRight.svg';
 
 export function Hero() {
   const heroRef = useRef<HTMLDivElement | null>(null);
@@ -73,12 +70,7 @@ export function Hero() {
 
         <img src={videoImg} width={500} alt="woman watching a video"/>
       </HeroContent>
-      {/* 
-      <HeroFooter>
-        <img src={polygonLeft} />
-        <img src={polygonRight} />
-      </HeroFooter> */}
-            
+   
     </HeroContainer>
   );
 }
